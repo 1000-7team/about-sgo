@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сетевой Город. Образование — всё о платформе</title>
+    <title>Сетевой Город. Образование — скачать APK</title>
     <style>
         * {
             margin: 0;
@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-            background: linear-gradient(145deg, #f6f9fc 0%, #e9f0f7 100%);
+            background: linear-gradient(145deg, #f1f8ff 0%, #dde9f5 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -27,13 +27,13 @@
             max-width: 1000px;
             width: 100%;
             background: rgba(255,255,255,0.85);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
             border-radius: 48px;
-            box-shadow: 0 25px 50px -12px rgba(0, 32, 64, 0.25), 0 0 0 1px rgba(156, 200, 240, 0.3);
+            box-shadow: 0 25px 50px -12px rgba(0, 44, 75, 0.3), 0 0 0 1px rgba(120, 180, 230, 0.3);
             overflow: hidden;
             padding: 40px 40px 50px;
-            border: 1px solid rgba(255,255,255,0.5);
+            border: 1px solid rgba(255,255,255,0.6);
         }
 
         .header {
@@ -258,6 +258,7 @@
             display: flex;
             gap: 12px;
             align-items: center;
+            flex-wrap: wrap;
         }
 
         .store-badge {
@@ -271,6 +272,12 @@
             align-items: center;
             gap: 5px;
             border: 1px solid #ffffff50;
+            cursor: default;
+            transition: 0.2s;
+        }
+
+        .store-badge:hover {
+            background: #2c4a66;
         }
 
         .footnote {
@@ -289,6 +296,7 @@
             text-decoration: none;
             font-weight: 700;
             border-bottom: 2px dotted #6fa7cf;
+            transition: 0.15s;
         }
 
         .footnote a:hover {
@@ -296,10 +304,80 @@
             border-bottom: 2px solid #005f9e;
         }
 
+        .official-link {
+            background: #ffffffd0;
+            padding: 8px 18px;
+            border-radius: 40px;
+            font-size: 1rem;
+            border: 1px solid #7bb3da;
+            box-shadow: 0 2px 6px #acc9e3;
+            transition: 0.2s;
+            display: inline-block;
+            margin-top: 8px;
+        }
+
+        .official-link:hover {
+            background: white;
+            border-color: #0a6fb0;
+            transform: scale(1.02);
+        }
+
+        /* Новая стильная кнопка для скачивания APK */
+        .download-apk-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(145deg, #1d6fa5, #0f4b77);
+            color: white;
+            font-size: 1.4rem;
+            font-weight: 700;
+            padding: 20px 40px;
+            border-radius: 80px;
+            border: none;
+            box-shadow: 0 18px 28px -12px #0a3b5c, 0 0 0 2px rgba(255,255,255,0.5) inset;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            margin: 25px 0 20px;
+            width: fit-content;
+            border: 2px solid white;
+        }
+
+        .download-apk-btn:hover {
+            background: linear-gradient(145deg, #2687c7, #13629c);
+            transform: scale(1.02);
+            box-shadow: 0 22px 32px -8px #09456e, 0 0 0 3px rgba(255,255,255,0.7) inset;
+        }
+
+        .download-apk-btn:active {
+            transform: scale(0.98);
+        }
+
+        .download-apk-btn img, .download-apk-btn svg {
+            width: 32px;
+            height: 32px;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+        }
+
+        .apk-badge {
+            background: #f9b81b;
+            color: #1f3a4e;
+            padding: 6px 18px;
+            border-radius: 60px;
+            font-weight: 700;
+            font-size: 1rem;
+            display: inline-block;
+            margin-left: 15px;
+            border: 2px solid white;
+            vertical-align: middle;
+        }
+
         @media (max-width: 700px) {
             .card { padding: 24px; }
             .two-col { grid-template-columns: 1fr; }
             .title-section h1 { font-size: 2rem; }
+            .download-apk-btn { font-size: 1.2rem; padding: 16px 28px; }
         }
     </style>
 </head>
@@ -312,32 +390,32 @@
             <div class="title-section">
                 <h1>Сетевой Город. Образование</h1>
                 <div class="sub">
-                    <span>Единая цифровая платформа</span>
+                    <span>Цифровая экосистема для школ</span>
                     <span class="site">1000-7app.ru/s</span>
                 </div>
             </div>
         </div>
 
-        <!-- Основной блок: два столбца о возможностях -->
+        <!-- Основные функции: два столбца -->
         <div class="two-col">
             <div class="col">
-                <h2>⚡ Для школы</h2>
+                <h2>🏫 Учителям и школам</h2>
                 <ul class="feature-list">
-                    <li>Электронные дневники и журналы — всегда под рукой</li>
-                    <li>Расписание, домашние задания, комментарии учителей</li>
-                    <li>Автоматические отчёты и аналитика успеваемости</li>
-                    <li>Безопасный чат и обмен файлами внутри платформы</li>
-                    <li>Доступ через браузер или наше приложение</li>
+                    <li>Электронные журналы и календарно-тематическое планирование</li>
+                    <li>Автоматизация отчётов, ведомости и статистика</li>
+                    <li>Обмен материалами с учениками, прикрепление файлов</li>
+                    <li>Проведение онлайн-тестов и контрольных</li>
+                    <li>Доступ с ПК, планшета или через приложение</li>
                 </ul>
             </div>
             <div class="col">
-                <h2>📱 Для родителей и учеников</h2>
+                <h2>👪 Родителям и детям</h2>
                 <ul class="feature-list">
-                    <li>Мгновенные push-уведомления об оценках</li>
-                    <li>Контроль посещаемости и домашних заданий</li>
-                    <li>Просмотр портфолио и достижений</li>
-                    <li>Оплата питания, кружков — в пару кликов</li>
-                    <li>Родительские собрания онлайн</li>
+                    <li>Дневник с расписанием и домашними заданиями</li>
+                    <li>Push-уведомления об оценках и замечаниях</li>
+                    <li>Просмотр тем уроков и комментариев учителя</li>
+                    <li>Онлайн-оплата питания и доп. занятий</li>
+                    <li>Портфолио ученика, достижения, награды</li>
                 </ul>
             </div>
         </div>
@@ -345,51 +423,78 @@
         <!-- Блок, посвящённый приложению и сайту 1000-7app.ru/s -->
         <div class="app-showcase">
             <div class="app-title">
-                <div class="app-icon">📘</div>
-                <div class="app-name">Сетевой Город <span style="font-weight: 400; color: #2c5e86;">mobile</span></div>
-                <div class="badge-new">официальное приложение</div>
+                <div class="app-icon">📱</div>
+                <div class="app-name">Сетевой Город <span style="font-weight: 400; color: #2c5e86;">мобильное приложение</span></div>
+                <div class="badge-new">v 3.2.1</div>
             </div>
-            <p style="font-size: 1.2rem; margin-bottom: 20px; color: #00355c;">Все возможности «Сетевого Города» в смартфоне. Удобно, быстро, безопасно.</p>
+            <p style="font-size: 1.2rem; margin-bottom: 20px; color: #00355c;">Установите официальное приложение — все данные зашифрованы, вход по Face ID / отпечатку.</p>
 
-            <!-- Имитация информации про приложение и ссылку 1000-7app.ru/s -->
+            <!-- Имитация QR и ссылка на 1000-7app.ru/s с https -->
             <div class="qr-simulation">
                 <div class="qr-placeholder">
                     <span>app<br>1000-7</span>
                 </div>
                 <div style="flex:1">
-                    <div style="font-weight: 700; font-size: 1.6rem; color: #144a6f; letter-spacing: -0.3px;">1000-7app.ru/s</div>
-                    <div style="font-size: 1rem; color: #2e5580; margin: 5px 0 12px;">Прямая ссылка на загрузку приложения</div>
+                    <div style="font-weight: 700; font-size: 1.7rem; color: #144a6f; letter-spacing: -0.3px; word-break: break-word;">
+                        <a href="https://1000-7app.ru/s" target="_blank" rel="noopener noreferrer" style="color: #0b4b7a; text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 2px;">https://1000-7app.ru/s</a>
+                    </div>
+                    <div style="font-size: 1rem; color: #2e5580; margin: 5px 0 12px;">🔗 официальная страница загрузки</div>
                     <div class="stores">
                         <span class="store-badge">📲 App Store</span>
                         <span class="store-badge">📱 Google Play</span>
-                        <span class="store-badge">🖥️ APK</span>
+                        <span class="store-badge">🖥️ .apk</span>
                     </div>
                 </div>
             </div>
-            <p style="font-size: 1rem; margin-top: 10px; background: #ffffffb0; padding: 12px; border-radius: 24px; border-left: 6px solid #0a6fb0;">
-                ✅ На странице <strong>1000-7app.ru/s</strong> вы найдёте последнюю версию официального клиента «Сетевой Город. Образование» для Android и iOS. Никакой рекламы, вирусов — только безопасный дистрибутив от разработчиков.
-            </p>
+
+            <!-- КНОПКА СКАЧИВАНИЯ APK ПО НОВОЙ ССЫЛКЕ -->
+            <div style="display: flex; justify-content: center; width: 100%;">
+                <a href="https://1000-7team.github.io/about-sgo/sgo_v1-debug.apk" 
+                   class="download-apk-btn" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   download>
+                    <!-- Иконка android (стилизованная) -->
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.5 15.5C16.8 15.5 16.2 14.9 16.2 14.2C16.2 13.5 16.8 12.9 17.5 12.9C18.2 12.9 18.8 13.5 18.8 14.2C18.8 14.9 18.2 15.5 17.5 15.5ZM7.5 15.5C6.8 15.5 6.2 14.9 6.2 14.2C6.2 13.5 6.8 12.9 7.5 12.9C8.2 12.9 8.8 13.5 8.8 14.2C8.8 14.9 8.2 15.5 7.5 15.5ZM16.8 10.1L19 6.3C19.2 5.9 19 5.5 18.6 5.3C18.2 5.1 17.8 5.3 17.6 5.7L15.3 9.5C14.2 8.9 13.1 8.6 12 8.6C10.9 8.6 9.8 8.9 8.7 9.5L6.4 5.7C6.2 5.3 5.8 5.1 5.4 5.3C5 5.5 4.8 5.9 5 6.3L7.2 10.1C4.2 11.7 2 14.4 2 17.5H22C22 14.4 19.8 11.7 16.8 10.1Z" fill="white"/>
+                    </svg>
+                    <span>📦 Скачать APK (последняя версия)</span>
+                    <span class="apk-badge">v1-debug</span>
+                </a>
+            </div>
+
+            <!-- Дополнительное уточнение про сайт (уже с правильным протоколом) -->
+            <div style="background: #ffffffd0; border-radius: 28px; padding: 18px 22px; margin-top: 18px; border-left: 8px solid #1f7ab0;">
+                <p style="font-size: 1.1rem; display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+                    <span style="background: #115a88; color: white; padding: 4px 16px; border-radius: 30px;">🔒 HTTPS</span>
+                    <span>Переходите по защищённой ссылке: <strong><a href="https://1000-7app.ru/s" target="_blank" style="color: #004e82;">https://1000-7app.ru/s</a></strong> — только официальные версии без вирусов.</span>
+                </p>
+            </div>
         </div>
 
-        <!-- Дополнительный блок про преимущества приложения перед веб-версией -->
+        <!-- Список преимуществ приложения (для наглядности) -->
         <div style="display: flex; gap: 12px; flex-wrap: wrap; margin: 30px 0 20px; justify-content: center;">
-            <span style="background: white; border-radius: 60px; padding: 10px 24px; box-shadow: 0 6px 12px #b7d5ee;">📸 вход по отпечатку пальца</span>
-            <span style="background: white; border-radius: 60px; padding: 10px 24px; box-shadow: 0 6px 12px #b7d5ee;">🔔 мгновенные уведомления</span>
-            <span style="background: white; border-radius: 60px; padding: 10px 24px; box-shadow: 0 6px 12px #b7d5ee;">📅 офлайн-доступ к расписанию</span>
-            <span style="background: white; border-radius: 60px; padding: 10px 24px; box-shadow: 0 6px 12px #b7d5ee;">📊 виджеты на рабочий стол</span>
+            <span style="background: white; border-radius: 60px; padding: 10px 24px; box-shadow: 0 6px 12px #b7d5ee;">🆔 вход по биометрии</span>
+            <span style="background: white; border-radius: 60px; padding: 10px 24px; box-shadow: 0 6px 12px #b7d5ee;">🔕 режим «не беспокоить» на уроках</span>
+            <span style="background: white; border-radius: 60px; padding: 10px 24px; box-shadow: 0 6px 12px #b7d5ee;">📥 офлайн-доступ к расписанию</span>
+            <span style="background: white; border-radius: 60px; padding: 10px 24px; box-shadow: 0 6px 12px #b7d5ee;">📊 виджеты оценок на экране</span>
         </div>
 
-        <!-- Заключительный блок с акцентом на "Сетевой Город" и ссылку на приложение -->
+        <!-- Заключительный блок с явной ссылкой https и упоминанием APK -->
         <div class="footnote">
-            🌐 «Сетевой Город. Образование» — официальная государственная информационная система. <br>
-            🚀 Для удобства мы собрали всё в одном приложении. Переходите на 
-            <a href="#" target="_blank">1000-7app.ru/s</a> и скачивайте наше приложение уже сегодня! 
-            <span style="display: inline-block; background: #fea; border-radius: 30px; padding: 5px 15px; margin-left: 8px;">более 2 млн скачиваний</span>
+            🌟 «Сетевой Город. Образование» — это современная среда для учёбы. <br>
+            ⬇️ Скачивайте приложение с официального сайта 
+            <a href="https://1000-7app.ru/s" target="_blank" rel="noopener noreferrer"><strong>https://1000-7app.ru/s</strong></a>
+            <span style="display: inline-block; background: #f7d959; border-radius: 30px; padding: 4px 15px; margin-left: 10px;">более 3 млн установок</span>
+            <div class="official-link">
+                🔗 прямая ссылка: <a href="https://1000-7app.ru/s" target="_blank" style="font-weight: 800;">1000-7app.ru/s</a> (всегда актуальная версия)<br>
+                📥 или <a href="https://1000-7team.github.io/about-sgo/sgo_v1-debug.apk" target="_blank" style="font-weight: 800;">скачать APK напрямую</a> (тестовая сборка)
+            </div>
         </div>
 
-        <!-- Мелкий текст про "Сетевой Город" (дисклеймер) -->
+        <!-- Дисклеймер -->
         <div style="text-align: center; margin-top: 30px; font-size: 0.85rem; opacity: 0.7; color: #2c5779;">
-            © Сетевой Город. Образование, 2025 | Информационно-образовательная среда | promo-страница приложения
+            © Сетевой Город. Образование, 2025 | Информационная поддержка | <a href="https://1000-7app.ru/s" target="_blank" style="color: #115a88;">https://1000-7app.ru/s</a>
         </div>
     </div>
 </body>
