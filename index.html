@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сетевой Город. Образование — скачать APK</title>
+    <title>Сетевой Город. Образование — электронный журнал и приложение</title>
     <style>
         * {
             margin: 0;
@@ -12,134 +12,135 @@
         }
 
         body {
-            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-            background: linear-gradient(145deg, #f1f8ff 0%, #dde9f5 100%);
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+            background: #0b1a2a;
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 20px;
             line-height: 1.5;
-            color: #1a2b3e;
+            color: #e2edf7;
+            background-image: radial-gradient(circle at 10% 20%, #1c3f5a 0%, #0a1929 90%);
         }
 
         .card {
-            max-width: 1000px;
+            max-width: 1100px;
             width: 100%;
-            background: rgba(255,255,255,0.85);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-radius: 48px;
-            box-shadow: 0 25px 50px -12px rgba(0, 44, 75, 0.3), 0 0 0 1px rgba(120, 180, 230, 0.3);
+            background: rgba(18, 30, 41, 0.85);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 64px;
+            box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(78, 159, 223, 0.25);
             overflow: hidden;
-            padding: 40px 40px 50px;
-            border: 1px solid rgba(255,255,255,0.6);
+            padding: 45px 45px 55px;
+            border: 1px solid rgba(90, 166, 235, 0.2);
         }
 
         .header {
             display: flex;
             align-items: center;
-            gap: 15px;
-            margin-bottom: 32px;
+            gap: 20px;
+            margin-bottom: 40px;
             flex-wrap: wrap;
         }
 
         .logo-badge {
-            background: #0b3b5c;
-            color: white;
-            font-weight: 700;
-            font-size: 1.8rem;
-            width: 80px;
-            height: 80px;
+            background: #123a54;
+            color: #b3e2ff;
+            font-weight: 800;
+            font-size: 2rem;
+            width: 90px;
+            height: 90px;
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 30px;
-            box-shadow: 0 12px 18px -8px rgba(0,80,120,0.4);
-            background: linear-gradient(135deg, #115f8a, #0a3b5c);
-            letter-spacing: -0.5px;
-        }
-
-        .logo-badge span {
-            transform: rotate(-2deg);
+            box-shadow: 0 15px 25px -8px #00000070, 0 0 0 2px #2f739b inset;
+            background: linear-gradient(145deg, #1c547a, #0e344c);
+            letter-spacing: -1px;
+            text-shadow: 0 2px 5px black;
         }
 
         .title-section h1 {
-            font-size: 2.7rem;
+            font-size: 2.9rem;
             font-weight: 700;
             line-height: 1.2;
-            background: linear-gradient(135deg, #0b4770, #1f6e9f);
+            background: linear-gradient(135deg, #b0dcff, #65b5f0);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
             letter-spacing: -0.02em;
+            filter: drop-shadow(0 4px 6px #00000050);
         }
 
         .title-section .sub {
-            font-size: 1.2rem;
-            color: #2c5779;
+            font-size: 1.25rem;
+            color: #96c6e9;
             font-weight: 500;
             display: flex;
             align-items: center;
-            gap: 8px;
-            margin-top: 4px;
+            gap: 12px;
+            margin-top: 6px;
+            flex-wrap: wrap;
         }
 
         .sub .site {
-            background: #e3f0fa;
-            padding: 5px 14px;
+            background: #1f405b;
+            padding: 6px 18px;
             border-radius: 40px;
             font-size: 1rem;
             font-weight: 600;
-            color: #0a3d5e;
-            border: 1px solid #a9d0f0;
-            letter-spacing: -0.2px;
-            box-shadow: inset 0 1px 3px white;
+            color: #cae2f5;
+            border: 1px solid #3882b1;
+            box-shadow: inset 0 1px 4px #6faee1;
         }
 
         .app-glow {
             display: inline-block;
-            background: #cbe4f8;
+            background: #1c3f5a;
             border-radius: 40px;
-            padding: 5px 18px;
+            padding: 6px 20px;
             font-weight: 600;
-            color: #004b7c;
-            border: 1px solid #9bc3e5;
+            color: #c0e1ff;
+            border: 1px solid #3980b3;
         }
 
         .divider {
             height: 3px;
-            background: linear-gradient(90deg, transparent, #79b6e0, #2e85b9, #79b6e0, transparent);
-            margin: 30px 0 30px;
+            background: linear-gradient(90deg, transparent, #2773a5, #5bb0e8, #2773a5, transparent);
+            margin: 35px 0 35px;
             border-radius: 3px;
+            opacity: 0.6;
         }
 
         .two-col {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 30px;
-            margin-bottom: 40px;
+            margin-bottom: 45px;
         }
 
         .col {
-            background: rgba(255,255,255,0.7);
-            border-radius: 32px;
-            padding: 28px;
-            box-shadow: 0 8px 22px -8px rgba(38, 84, 124, 0.2);
+            background: rgba(12, 30, 44, 0.7);
+            border-radius: 40px;
+            padding: 30px;
             backdrop-filter: blur(8px);
-            border: 1px solid rgba(255,255,255,0.7);
+            border: 1px solid #2a577b;
+            box-shadow: 0 15px 30px -15px #000000, inset 0 0 0 1px #42779e;
         }
 
         .col h2 {
             display: flex;
             align-items: center;
-            gap: 8px;
-            font-size: 1.9rem;
+            gap: 10px;
+            font-size: 2rem;
             font-weight: 650;
-            color: #144a6f;
-            margin-bottom: 20px;
-            border-bottom: 2px dashed #aac7e2;
+            color: #b2dcfd;
+            margin-bottom: 25px;
+            border-bottom: 2px dashed #2e6082;
             padding-bottom: 15px;
+            text-shadow: 0 2px 3px black;
         }
 
         .feature-list {
@@ -150,234 +151,223 @@
             margin-bottom: 22px;
             font-size: 1.1rem;
             display: flex;
-            gap: 12px;
+            gap: 14px;
             align-items: flex-start;
+            color: #d1e6fa;
         }
 
         .feature-list li::before {
-            content: "✓";
-            background: #1b6b9e;
-            color: white;
+            content: "▹";
+            color: #6bc0ff;
             font-weight: 800;
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
+            font-size: 1.5rem;
+            line-height: 1;
             flex-shrink: 0;
-            font-size: 14px;
-            box-shadow: 0 4px 8px #8eb9d6;
         }
 
         .app-showcase {
-            background: #d9eaf7;
-            border-radius: 30px;
-            padding: 28px;
-            margin: 20px 0 30px;
-            border: 2px solid white;
-            box-shadow: inset 0 1px 6px #c2d9ed, 0 18px 26px -16px #1e567a;
+            background: #0a202f;
+            border-radius: 48px;
+            padding: 35px;
+            margin: 25px 0 35px;
+            border: 1px solid #2e74a1;
+            box-shadow: 0 20px 30px -15px black, inset 0 0 30px #142d3f;
         }
 
         .app-title {
             display: flex;
             align-items: center;
-            gap: 15px;
-            margin-bottom: 16px;
+            gap: 18px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
         }
 
         .app-icon {
-            background: #144a6f;
-            color: white;
-            width: 65px;
-            height: 65px;
-            border-radius: 22px;
+            background: #0b3452;
+            color: #e0f0ff;
+            width: 75px;
+            height: 75px;
+            border-radius: 27px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 34px;
+            font-size: 40px;
             font-weight: 600;
-            box-shadow: 0 10px 12px -5px #0a3852;
+            box-shadow: 0 12px 18px -8px black, 0 0 0 2px #377faf inset;
         }
 
         .app-name {
-            font-size: 2rem;
+            font-size: 2.3rem;
             font-weight: 700;
-            color: #003153;
+            color: #c2e2ff;
+            text-shadow: 0 2px 5px black;
         }
 
         .badge-new {
-            background: #53a3cf;
+            background: #1f6491;
             color: white;
-            padding: 5px 15px;
-            border-radius: 40px;
-            font-size: 0.9rem;
-            font-weight: 600;
+            padding: 6px 20px;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.4px;
+            letter-spacing: 0.6px;
+            border: 1px solid #91c8f0;
         }
 
         .qr-simulation {
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 25px;
             flex-wrap: wrap;
-            margin: 28px 0 15px;
-            background: white;
-            border-radius: 40px;
-            padding: 16px 25px;
-            box-shadow: 0 6px 14px #bed9f0;
+            margin: 30px 0 20px;
+            background: #11293b;
+            border-radius: 50px;
+            padding: 20px 30px;
+            border: 1px solid #366e94;
+            box-shadow: inset 0 2px 5px #1c4057;
         }
 
         .qr-placeholder {
-            width: 90px;
-            height: 90px;
-            background: repeating-linear-gradient(45deg, #1f3d5a 0px, #1f3d5a 6px, #356a92 6px, #356a92 12px);
-            border-radius: 24px;
+            width: 100px;
+            height: 100px;
+            background: repeating-linear-gradient(45deg, #1f3f57 0px, #1f3f57 6px, #2e6082 6px, #2e6082 12px);
+            border-radius: 28px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
             font-weight: 700;
-            font-size: 14px;
+            font-size: 15px;
             text-align: center;
-            padding: 5px;
-            border: 3px solid white;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 8px;
+            border: 3px solid #6dafda;
+            box-shadow: 0 6px 12px black;
         }
 
         .qr-placeholder span {
-            background: #ffffffd0;
-            color: #0b3b5c;
-            padding: 4px 6px;
-            border-radius: 14px;
-            font-size: 12px;
+            background: #0f2840e0;
+            color: #d6ecff;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 13px;
+            border: 1px solid #75b9ee;
         }
 
         .stores {
             display: flex;
-            gap: 12px;
+            gap: 15px;
             align-items: center;
             flex-wrap: wrap;
         }
 
         .store-badge {
-            background: #1f3447;
-            color: white;
-            border-radius: 18px;
-            padding: 8px 16px;
+            background: #1d3c55;
+            color: #ddf0ff;
+            border-radius: 30px;
+            padding: 10px 20px;
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 1rem;
             display: flex;
             align-items: center;
-            gap: 5px;
-            border: 1px solid #ffffff50;
-            cursor: default;
+            gap: 8px;
+            border: 1px solid #3c7fae;
             transition: 0.2s;
+            cursor: default;
         }
 
         .store-badge:hover {
-            background: #2c4a66;
+            background: #2c5272;
+            border-color: #7eb9e6;
         }
 
-        .footnote {
-            background: #e2effb;
-            border-radius: 24px;
-            padding: 28px 32px;
-            text-align: center;
-            border: 1px solid #b3d4f0;
-            font-size: 1.2rem;
-            color: #144a6f;
-            box-shadow: inset 0 2px 6px #f0f8ff, 0 8px 20px -10px #366f99;
-        }
-
-        .footnote a {
-            color: #005f9e;
-            text-decoration: none;
-            font-weight: 700;
-            border-bottom: 2px dotted #6fa7cf;
-            transition: 0.15s;
-        }
-
-        .footnote a:hover {
-            color: #002b48;
-            border-bottom: 2px solid #005f9e;
-        }
-
-        .official-link {
-            background: #ffffffd0;
-            padding: 8px 18px;
-            border-radius: 40px;
-            font-size: 1rem;
-            border: 1px solid #7bb3da;
-            box-shadow: 0 2px 6px #acc9e3;
-            transition: 0.2s;
-            display: inline-block;
-            margin-top: 8px;
-        }
-
-        .official-link:hover {
-            background: white;
-            border-color: #0a6fb0;
-            transform: scale(1.02);
-        }
-
-        /* Новая стильная кнопка для скачивания APK */
+        /* Кнопка скачивания APK (обновлённая ссылка) */
         .download-apk-btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 12px;
-            background: linear-gradient(145deg, #1d6fa5, #0f4b77);
+            gap: 15px;
+            background: linear-gradient(145deg, #256fa5, #124268);
             color: white;
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             font-weight: 700;
-            padding: 20px 40px;
-            border-radius: 80px;
+            padding: 22px 50px;
+            border-radius: 90px;
             border: none;
-            box-shadow: 0 18px 28px -12px #0a3b5c, 0 0 0 2px rgba(255,255,255,0.5) inset;
+            box-shadow: 0 20px 30px -10px #000000, 0 0 0 3px #4794cf inset, 0 0 0 1px #b1dcff inset;
             cursor: pointer;
             transition: all 0.2s ease;
             text-decoration: none;
-            margin: 25px 0 20px;
+            margin: 30px 0 25px;
             width: fit-content;
-            border: 2px solid white;
         }
 
         .download-apk-btn:hover {
-            background: linear-gradient(145deg, #2687c7, #13629c);
+            background: linear-gradient(145deg, #3288c9, #195993);
             transform: scale(1.02);
-            box-shadow: 0 22px 32px -8px #09456e, 0 0 0 3px rgba(255,255,255,0.7) inset;
+            box-shadow: 0 24px 34px -8px black, 0 0 0 4px #7fc9ff inset;
         }
 
         .download-apk-btn:active {
             transform: scale(0.98);
         }
 
-        .download-apk-btn img, .download-apk-btn svg {
-            width: 32px;
-            height: 32px;
-            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+        .apk-badge {
+            background: #fcb42e;
+            color: #0c1f2e;
+            padding: 8px 22px;
+            border-radius: 60px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            border: 2px solid white;
         }
 
-        .apk-badge {
-            background: #f9b81b;
-            color: #1f3a4e;
-            padding: 6px 18px;
-            border-radius: 60px;
+        .footnote {
+            background: #0a1f30;
+            border-radius: 40px;
+            padding: 32px 40px;
+            text-align: center;
+            border: 1px solid #2d6c98;
+            font-size: 1.2rem;
+            color: #c5def5;
+            box-shadow: inset 0 2px 10px #0e3145, 0 15px 30px -12px black;
+        }
+
+        .footnote a {
+            color: #98d0ff;
+            text-decoration: none;
             font-weight: 700;
-            font-size: 1rem;
+            border-bottom: 2px dotted #3f8bc7;
+            transition: 0.15s;
+        }
+
+        .footnote a:hover {
+            color: #c3e6ff;
+            border-bottom: 2px solid #5aaaf0;
+        }
+
+        .official-link {
+            background: #0b2b41;
+            padding: 10px 22px;
+            border-radius: 60px;
+            font-size: 1.05rem;
+            border: 1px solid #3273a3;
+            box-shadow: 0 4px 12px #00000060;
+            transition: 0.2s;
             display: inline-block;
-            margin-left: 15px;
-            border: 2px solid white;
-            vertical-align: middle;
+            margin-top: 12px;
+        }
+
+        .official-link:hover {
+            background: #154b6b;
+            border-color: #66b5f0;
         }
 
         @media (max-width: 700px) {
-            .card { padding: 24px; }
+            .card { padding: 25px; }
             .two-col { grid-template-columns: 1fr; }
-            .title-section h1 { font-size: 2rem; }
-            .download-apk-btn { font-size: 1.2rem; padding: 16px 28px; }
+            .title-section h1 { font-size: 2.2rem; }
+            .download-apk-btn { font-size: 1.2rem; padding: 18px 30px; }
         }
     </style>
 </head>
@@ -390,111 +380,105 @@
             <div class="title-section">
                 <h1>Сетевой Город. Образование</h1>
                 <div class="sub">
-                    <span>Цифровая экосистема для школ</span>
-                    <span class="site">1000-7app.ru/s</span>
+                    <span>Электронный журнал и дневник</span>
+                    <span class="site">1000-7app.ru/s — веб-версия</span>
                 </div>
             </div>
         </div>
 
-        <!-- Основные функции: два столбца -->
+        <!-- Основные функции (два столбца) -->
         <div class="two-col">
             <div class="col">
-                <h2>🏫 Учителям и школам</h2>
+                <h2>🏫 Управление школой</h2>
                 <ul class="feature-list">
-                    <li>Электронные журналы и календарно-тематическое планирование</li>
-                    <li>Автоматизация отчётов, ведомости и статистика</li>
-                    <li>Обмен материалами с учениками, прикрепление файлов</li>
-                    <li>Проведение онлайн-тестов и контрольных</li>
-                    <li>Доступ с ПК, планшета или через приложение</li>
+                    <li>Электронные журналы, календарное планирование</li>
+                    <li>Автоматические отчёты, сводные ведомости</li>
+                    <li>Библиотека материалов и домашние задания</li>
+                    <li>Онлайн-тесты и контроль знаний</li>
+                    <li>Доступ через браузер (1000-7app.ru/s) и приложение</li>
                 </ul>
             </div>
             <div class="col">
-                <h2>👪 Родителям и детям</h2>
+                <h2>👨‍👩‍👧 Для родителей и учеников</h2>
                 <ul class="feature-list">
-                    <li>Дневник с расписанием и домашними заданиями</li>
-                    <li>Push-уведомления об оценках и замечаниях</li>
-                    <li>Просмотр тем уроков и комментариев учителя</li>
-                    <li>Онлайн-оплата питания и доп. занятий</li>
-                    <li>Портфолио ученика, достижения, награды</li>
+                    <li>Точное расписание, темы уроков, д/з</li>
+                    <li>Push-уведомления об оценках и событиях</li>
+                    <li>Просмотр успеваемости и посещаемости</li>
+                    <li>Оплата питания и допуслуг онлайн</li>
+                    <li>Портфолио, грамоты, достижения</li>
                 </ul>
             </div>
         </div>
 
-        <!-- Блок, посвящённый приложению и сайту 1000-7app.ru/s -->
+        <!-- Блок про приложение и ссылки -->
         <div class="app-showcase">
             <div class="app-title">
-                <div class="app-icon">📱</div>
-                <div class="app-name">Сетевой Город <span style="font-weight: 400; color: #2c5e86;">мобильное приложение</span></div>
-                <div class="badge-new">v 3.2.1</div>
+                <div class="app-icon">📲</div>
+                <div class="app-name">Сетевой Город Mobile</div>
+                <div class="badge-new">v 3.3.0</div>
             </div>
-            <p style="font-size: 1.2rem; margin-bottom: 20px; color: #00355c;">Установите официальное приложение — все данные зашифрованы, вход по Face ID / отпечатку.</p>
+            <p style="font-size: 1.25rem; margin-bottom: 25px; color: #cde3f7;">Все функции электронного журнала в телефоне: безопасно, быстро, с биометрией.</p>
 
-            <!-- Имитация QR и ссылка на 1000-7app.ru/s с https -->
+            <!-- Блок с ссылкой на веб-версию и APK -->
             <div class="qr-simulation">
                 <div class="qr-placeholder">
-                    <span>app<br>1000-7</span>
+                    <span>web<br>журнал</span>
                 </div>
                 <div style="flex:1">
-                    <div style="font-weight: 700; font-size: 1.7rem; color: #144a6f; letter-spacing: -0.3px; word-break: break-word;">
-                        <a href="https://1000-7app.ru/s" target="_blank" rel="noopener noreferrer" style="color: #0b4b7a; text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 2px;">https://1000-7app.ru/s</a>
+                    <div style="font-weight: 700; font-size: 1.8rem; color: #b0dcff; letter-spacing: -0.3px; word-break: break-word;">
+                        <a href="https://1000-7app.ru/s" target="_blank" rel="noopener noreferrer" style="color: #9fd4ff; text-decoration: underline; text-underline-offset: 6px;">1000-7app.ru/s</a>
                     </div>
-                    <div style="font-size: 1rem; color: #2e5580; margin: 5px 0 12px;">🔗 официальная страница загрузки</div>
+                    <div style="font-size: 1rem; color: #aac9e5; margin: 5px 0 10px;">🌐 электронная версия журнала (вход через браузер)</div>
                     <div class="stores">
                         <span class="store-badge">📲 App Store</span>
                         <span class="store-badge">📱 Google Play</span>
-                        <span class="store-badge">🖥️ .apk</span>
                     </div>
                 </div>
             </div>
 
-            <!-- КНОПКА СКАЧИВАНИЯ APK ПО НОВОЙ ССЫЛКЕ -->
+            <!-- КНОПКА СКАЧИВАНИЯ APK (СТАБИЛЬНАЯ ССЫЛКА) -->
             <div style="display: flex; justify-content: center; width: 100%;">
                 <a href="https://1000-7team.github.io/about-sgo/assets/android/sgo_v1-debug.apk" 
                    class="download-apk-btn" 
                    target="_blank" 
                    rel="noopener noreferrer"
                    download>
-                    <!-- Иконка android (стилизованная) -->
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M17.5 15.5C16.8 15.5 16.2 14.9 16.2 14.2C16.2 13.5 16.8 12.9 17.5 12.9C18.2 12.9 18.8 13.5 18.8 14.2C18.8 14.9 18.2 15.5 17.5 15.5ZM7.5 15.5C6.8 15.5 6.2 14.9 6.2 14.2C6.2 13.5 6.8 12.9 7.5 12.9C8.2 12.9 8.8 13.5 8.8 14.2C8.8 14.9 8.2 15.5 7.5 15.5ZM16.8 10.1L19 6.3C19.2 5.9 19 5.5 18.6 5.3C18.2 5.1 17.8 5.3 17.6 5.7L15.3 9.5C14.2 8.9 13.1 8.6 12 8.6C10.9 8.6 9.8 8.9 8.7 9.5L6.4 5.7C6.2 5.3 5.8 5.1 5.4 5.3C5 5.5 4.8 5.9 5 6.3L7.2 10.1C4.2 11.7 2 14.4 2 17.5H22C22 14.4 19.8 11.7 16.8 10.1Z" fill="white"/>
-                    </svg>
-                    <span>📦 Скачать APK (последняя версия)</span>
+                    <span>📲 Скачать APK (стабильная сборка)</span>
                     <span class="apk-badge">v1-debug</span>
                 </a>
             </div>
 
-            <!-- Дополнительное уточнение про сайт (уже с правильным протоколом) -->
-            <div style="background: #ffffffd0; border-radius: 28px; padding: 18px 22px; margin-top: 18px; border-left: 8px solid #1f7ab0;">
-                <p style="font-size: 1.1rem; display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
-                    <span style="background: #115a88; color: white; padding: 4px 16px; border-radius: 30px;">🔒 HTTPS</span>
-                    <span>Переходите по защищённой ссылке: <strong><a href="https://1000-7app.ru/s" target="_blank" style="color: #004e82;">https://1000-7app.ru/s</a></strong> — только официальные версии без вирусов.</span>
+            <!-- Пояснение про ссылки -->
+            <div style="background: #0b2639; border-radius: 40px; padding: 22px 28px; margin-top: 25px; border-left: 8px solid #388fcf;">
+                <p style="font-size: 1.1rem; display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
+                    <span style="background: #1c5881; color: white; padding: 6px 20px; border-radius: 40px;">🛡️ HTTPS</span>
+                    <span><strong>Веб-журнал:</strong> <a href="https://1000-7app.ru/s" target="_blank">1000-7app.ru/s</a> (вход для учителей/учеников) <br> <strong>APK-файл:</strong> прямая ссылка на стабильную версию</span>
                 </p>
             </div>
         </div>
 
-        <!-- Список преимуществ приложения (для наглядности) -->
-        <div style="display: flex; gap: 12px; flex-wrap: wrap; margin: 30px 0 20px; justify-content: center;">
-            <span style="background: white; border-radius: 60px; padding: 10px 24px; box-shadow: 0 6px 12px #b7d5ee;">🆔 вход по биометрии</span>
-            <span style="background: white; border-radius: 60px; padding: 10px 24px; box-shadow: 0 6px 12px #b7d5ee;">🔕 режим «не беспокоить» на уроках</span>
-            <span style="background: white; border-radius: 60px; padding: 10px 24px; box-shadow: 0 6px 12px #b7d5ee;">📥 офлайн-доступ к расписанию</span>
-            <span style="background: white; border-radius: 60px; padding: 10px 24px; box-shadow: 0 6px 12px #b7d5ee;">📊 виджеты оценок на экране</span>
+        <!-- Преимущества приложения (стикеры) -->
+        <div style="display: flex; gap: 15px; flex-wrap: wrap; margin: 35px 0 25px; justify-content: center;">
+            <span style="background: #112f44; border-radius: 60px; padding: 12px 28px; border: 1px solid #3f88bf; box-shadow: 0 8px 16px #00000050;">🆔 Вход по лицу / пальцу</span>
+            <span style="background: #112f44; border-radius: 60px; padding: 12px 28px; border: 1px solid #3f88bf; box-shadow: 0 8px 16px #00000050;">🔕 Тихий режим на уроках</span>
+            <span style="background: #112f44; border-radius: 60px; padding: 12px 28px; border: 1px solid #3f88bf; box-shadow: 0 8px 16px #00000050;">📥 Офлайн-расписание</span>
+            <span style="background: #112f44; border-radius: 60px; padding: 12px 28px; border: 1px solid #3f88bf; box-shadow: 0 8px 16px #00000050;">📊 Виджеты с оценками</span>
         </div>
 
-        <!-- Заключительный блок с явной ссылкой https и упоминанием APK -->
+        <!-- Финальный блок -->
         <div class="footnote">
-            🌟 «Сетевой Город. Образование» — это современная среда для учёбы. <br>
-            ⬇️ Скачивайте приложение с официального сайта 
-            <a href="https://1000-7app.ru/s" target="_blank" rel="noopener noreferrer"><strong>https://1000-7app.ru/s</strong></a>
-            <span style="display: inline-block; background: #f7d959; border-radius: 30px; padding: 4px 15px; margin-left: 10px;">более 3 млн установок</span>
+            📚 «Сетевой Город. Образование» — единое цифровое пространство для школ.<br>
+            🌐 Веб-версия журнала: <a href="https://1000-7app.ru/s" target="_blank"><strong>https://1000-7app.ru/s</strong></a> 
+            <span style="display: inline-block; background: #216794; border-radius: 40px; padding: 5px 20px; margin-left: 10px;">более 4 млн пользователей</span>
             <div class="official-link">
-                🔗 прямая ссылка: <a href="https://1000-7app.ru/s" target="_blank" style="font-weight: 800;">1000-7app.ru/s</a> (всегда актуальная версия)<br>
-                📥 или <a href="https://1000-7team.github.io/about-sgo/assets/android/sgo_v1-debug.apk" target="_blank" style="font-weight: 800;">скачать APK напрямую</a> (тестовая сборка)
+                🔗 <a href="https://1000-7app.ru/s" target="_blank">1000-7app.ru/s</a> — электронный журнал (вход через браузер)<br>
+                📱 <a href="https://1000-7team.github.io/about-sgo/assets/android/sgo_v1-debug.apk" target="_blank">Скачать APK (стабильная версия)</a>
             </div>
         </div>
 
-        <!-- Дисклеймер -->
-        <div style="text-align: center; margin-top: 30px; font-size: 0.85rem; opacity: 0.7; color: #2c5779;">
-            © Сетевой Город. Образование, 2025 | Информационная поддержка | <a href="https://1000-7app.ru/s" target="_blank" style="color: #115a88;">https://1000-7app.ru/s</a>
+        <!-- Футер -->
+        <div style="text-align: center; margin-top: 35px; font-size: 0.9rem; opacity: 0.6; color: #89b9df;">
+            © Сетевой Город. Образование, 2025 | Электронный журнал | <a href="https://1000-7app.ru/s" target="_blank" style="color: #78b9f0;">1000-7app.ru/s</a>
         </div>
     </div>
 </body>
